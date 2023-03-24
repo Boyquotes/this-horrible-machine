@@ -13,6 +13,7 @@ class_name Player
 ## This script also adds submerged and emerged signals to change the 
 ## [Environment] when we are in the water.
 
+#TODO raycast needed to signal buttons that are targeted in range
 
 
 @export var input_back_action_name := "move_backward"
