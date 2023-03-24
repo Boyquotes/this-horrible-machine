@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://ecmr7fne31tx"]
+
+[resource]
+resource_name = "mat15"
+cull_mode = 2
+vertex_color_use_as_albedo = true

@@ -1,0 +1,20 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://d1qjtpfwmc02n"]
+
+[ext_resource type="Texture2D" uid="uid://61yic26iupsr" path="res://modules/levels/textures/metal/pitted-rusted-metal1.png" id="1_cxytf"]
+[ext_resource type="Texture2D" uid="uid://bxkydpql2633k" path="res://modules/levels/textures/metal/pitted-rusted-metal1/pitted-rusted-metal1_metallic.png" id="2_jv11j"]
+[ext_resource type="Texture2D" uid="uid://cbwdf8qmph3fe" path="res://modules/levels/textures/metal/pitted-rusted-metal1/pitted-rusted-metal1_normal-ogl.png" id="3_wiyxl"]
+[ext_resource type="Texture2D" uid="uid://dkebb4n1vm71d" path="res://modules/levels/textures/metal/pitted-rusted-metal1/pitted-rusted-metal1_roughness.png" id="4_am22b"]
+
+[resource]
+resource_name = "mat23"
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.34919, 0.34919, 0.34919, 1)
+albedo_texture = ExtResource("1_cxytf")
+metallic = 1.0
+metallic_texture = ExtResource("2_jv11j")
+roughness_texture = ExtResource("4_am22b")
+normal_enabled = true
+normal_texture = ExtResource("3_wiyxl")
+uv1_scale = Vector3(64, 64, 64)
+texture_filter = 0
