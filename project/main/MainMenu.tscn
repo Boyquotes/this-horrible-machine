@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cq12055y5na3p"]
+[gd_scene load_steps=3 format=3 uid="uid://cq12055y5na3p"]
 
 [ext_resource type="Script" path="res://modules/ui/Menu.gd" id="1_silv6"]
+[ext_resource type="Script" path="res://main/MenuOptions.gd" id="2_x7xrj"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -15,14 +16,6 @@ offset_right = 1152.0
 offset_bottom = 648.0
 color = Color(0.317647, 0.352941, 0.419608, 1)
 
-[node name="Button" type="Button" parent="."]
-layout_mode = 0
-offset_left = 374.0
-offset_top = 190.0
-offset_right = 460.0
-offset_bottom = 226.0
-text = "start"
-
 [node name="Title" type="Label" parent="."]
 layout_mode = 0
 offset_left = 475.0
@@ -33,10 +26,10 @@ text = "this horrible machine"
 
 [node name="Controls" type="Label" parent="."]
 layout_mode = 0
-offset_left = 706.0
-offset_top = 333.0
-offset_right = 840.0
-offset_bottom = 437.0
+offset_left = 592.0
+offset_top = 365.0
+offset_right = 726.0
+offset_bottom = 469.0
 text = "controls:
 
 wasd to move
@@ -46,3 +39,23 @@ space to jump"
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
+
+[node name="MenuOptions" type="VFlowContainer" parent="."]
+layout_mode = 0
+offset_left = 396.0
+offset_top = 281.0
+offset_right = 471.0
+offset_bottom = 390.0
+script = ExtResource("2_x7xrj")
+
+[node name="Start" type="Button" parent="MenuOptions"]
+layout_mode = 2
+text = "start"
+
+[node name="Settings" type="Button" parent="MenuOptions"]
+layout_mode = 2
+text = "settings"
+
+[node name="Quit" type="Button" parent="MenuOptions"]
+layout_mode = 2
+text = "quit"
