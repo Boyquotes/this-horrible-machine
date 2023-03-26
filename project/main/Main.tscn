@@ -1,19 +1,12 @@
 [gd_scene load_steps=4 format=3 uid="uid://dylchaoudpq4o"]
 
 [ext_resource type="Script" path="res://main/Main.gd" id="1_8dsjx"]
-[ext_resource type="Script" path="res://main/HUD.gd" id="2_fos80"]
+[ext_resource type="PackedScene" uid="uid://bcmjxxeruupi1" path="res://main/Gameplay.tscn" id="3_7n10y"]
 [ext_resource type="PackedScene" uid="uid://cq12055y5na3p" path="res://main/MainMenu.tscn" id="3_bjd3v"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_8dsjx")
 
-[node name="HUD" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-script = ExtResource("2_fos80")
-
 [node name="MainMenu" parent="." instance=ExtResource("3_bjd3v")]
 
-[node name="Main3D" type="Node3D" parent="."]
+[node name="Gameplay" parent="." instance=ExtResource("3_7n10y")]

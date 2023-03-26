@@ -1,11 +1,13 @@
 extends VFlowContainer
 
+@export var gameplay_scene:PackedScene
+@export var settings_scene:PackedScene
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
+func _on_start_pressed():
+	get_tree().change_scene_to_packed(gameplay_scene)
 
+func _on_settings_pressed():
+	get_tree().change_scene_to_packed(settings_scene)
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+func _on_quit_pressed():
+	get_tree().quit()

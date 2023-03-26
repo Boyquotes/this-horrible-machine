@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://cq12055y5na3p"]
+[gd_scene load_steps=4 format=3 uid="uid://cq12055y5na3p"]
 
 [ext_resource type="Script" path="res://modules/ui/Menu.gd" id="1_silv6"]
 [ext_resource type="Script" path="res://main/MenuOptions.gd" id="2_x7xrj"]
+[ext_resource type="PackedScene" uid="uid://bcmjxxeruupi1" path="res://main/Gameplay.tscn" id="3_825l4"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -47,6 +48,7 @@ offset_top = 281.0
 offset_right = 471.0
 offset_bottom = 390.0
 script = ExtResource("2_x7xrj")
+gameplay_scene = ExtResource("3_825l4")
 
 [node name="Start" type="Button" parent="MenuOptions"]
 layout_mode = 2
@@ -59,3 +61,7 @@ text = "settings"
 [node name="Quit" type="Button" parent="MenuOptions"]
 layout_mode = 2
 text = "quit"
+
+[connection signal="pressed" from="MenuOptions/Start" to="MenuOptions" method="_on_start_pressed"]
+[connection signal="pressed" from="MenuOptions/Settings" to="MenuOptions" method="_on_settings_pressed"]
+[connection signal="pressed" from="MenuOptions/Quit" to="MenuOptions" method="_on_quit_pressed"]
