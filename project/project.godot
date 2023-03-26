@@ -15,6 +15,10 @@ run/main_scene="res://main/Main.tscn"
 config/features=PackedStringArray("4.0", "C#", "Forward Plus")
 config/icon="res://main/icon.svg"
 
+[autoload]
+
+Global="*res://main/global.gd"
+
 [dotnet]
 
 project/assembly_name="this horrible machine"
