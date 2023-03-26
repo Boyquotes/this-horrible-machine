@@ -1,11 +1,11 @@
-[gd_scene load_steps=44 format=3 uid="uid://y153vjy1saks"]
+[gd_scene load_steps=44 format=3]
 
 [ext_resource type="Script" path="res://addons/qodot/src/nodes/qodot_map.gd" id="1_0yef5"]
 [ext_resource type="Script" path="res://modules/levels/prison00/prison_00.gd" id="1_myod5"]
 [ext_resource type="Resource" uid="uid://7h57nuq1xmoi" path="res://addons/qodot/game_definitions/fgd/qodot_fgd.tres" id="2_p7hxp"]
-[ext_resource type="Texture2D" uid="uid://cjgu8tqfk1pgr" path="res://modules/levels/textures/_prototype/slowblink_1024.png" id="4_ff0l7"]
-[ext_resource type="Texture2D" uid="uid://ckek65xjjcw6d" path="res://modules/levels/textures/_prototype/slowblink_128.png" id="7_vley4"]
-[ext_resource type="Texture2D" uid="uid://kjiarkpddy0b" path="res://modules/levels/textures/_prototype/_proto_16.png" id="10_gmx4l"]
+[ext_resource type="Texture2D" uid="uid://cjgu8tqfk1pgr" path="res://modules/surfaces/_prototype/slowblink_1024.png" id="4_ff0l7"]
+[ext_resource type="Texture2D" uid="uid://ckek65xjjcw6d" path="res://modules/surfaces/_prototype/slowblink_128.png" id="7_vley4"]
+[ext_resource type="Texture2D" uid="uid://kjiarkpddy0b" path="res://modules/surfaces/_prototype/_proto_16.png" id="10_gmx4l"]
 [ext_resource type="PackedScene" uid="uid://bwh16l46bo8rj" path="res://modules/fp_player/fp_player.tscn" id="11_4773k"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1ra78"]
