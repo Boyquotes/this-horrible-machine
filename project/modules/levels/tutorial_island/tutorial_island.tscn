@@ -1,6 +1,6 @@
-[gd_scene load_steps=140 format=3 uid="uid://66d01hdbaioj"]
+[gd_scene load_steps=137 format=3 uid="uid://66d01hdbaioj"]
 
-[ext_resource type="Texture2D" uid="uid://cg6qivrp4d7ql" path="res://modules/levels/1080thishorribleskybox.png" id="1_bjvad"]
+[ext_resource type="PackedScene" uid="uid://bqf3ndx6ttod3" path="res://modules/environments/world_environment.tscn" id="1_5y613"]
 [ext_resource type="Script" path="res://addons/qodot/src/nodes/qodot_map.gd" id="1_k14rr"]
 [ext_resource type="Resource" uid="uid://7h57nuq1xmoi" path="res://addons/qodot/game_definitions/fgd/qodot_fgd.tres" id="2_q1tfe"]
 [ext_resource type="Material" uid="uid://ck7ts2xvikn2s" path="res://modules/levels/textures/panel/filthy-space-panels.tres" id="4_d1pay"]
@@ -10,12 +10,12 @@
 [ext_resource type="Texture2D" uid="uid://ddsg8ige5itao" path="res://modules/levels/textures/metal/rusty-ribbed-metal/rusty-ribbed-metal_height.png" id="17_mxa7w"]
 [ext_resource type="Material" uid="uid://drdiqht115huk" path="res://modules/levels/textures/cement/wornpaintedcement.tres" id="18_hb3jw"]
 [ext_resource type="Texture2D" uid="uid://dt0qx1icjsyf1" path="res://modules/levels/textures/metal/rusty-ribbed-metal/rusty-ribbed-metal_metallic.png" id="18_vxx2m"]
-[ext_resource type="Texture2D" uid="uid://beb5p1h8ha0cq" path="res://modules/levels/textures/cement/cement_arcing_pattern1/cement_arcing_pattern1_height.png" id="18_wh43p"]
+[ext_resource type="Texture2D" uid="uid://beb5p1h8ha0cq" path="res://modules/levels/textures/cement/cement_arcing_pattern1/cement_arcing_pattern1_Height.png" id="18_wh43p"]
 [ext_resource type="Material" uid="uid://gsg6ssyoijyf" path="res://modules/levels/textures/iron/rustediron2.tres" id="19_12nux"]
-[ext_resource type="Texture2D" uid="uid://6ybig1wwvyo0" path="res://modules/levels/textures/cement/cement_arcing_pattern1/cement_arcing_pattern1_metallic.png" id="19_iasl3"]
+[ext_resource type="Texture2D" uid="uid://6ybig1wwvyo0" path="res://modules/levels/textures/cement/cement_arcing_pattern1/cement_arcing_pattern1_Metallic.png" id="19_iasl3"]
 [ext_resource type="Texture2D" uid="uid://mk8t181ot4if" path="res://modules/levels/textures/metal/rusty-ribbed-metal/rusty-ribbed-metal_normal.png" id="19_s5hp2"]
 [ext_resource type="Texture2D" uid="uid://d1tdwq2j83tjf" path="res://modules/levels/textures/metal/rusty-ribbed-metal/rusty-ribbed-metal_roughness.png" id="20_bggkg"]
-[ext_resource type="Texture2D" uid="uid://fqxyu6jc4dix" path="res://modules/levels/textures/cement/cement_arcing_pattern1/cement_arcing_pattern1_roughness.png" id="21_oe4hx"]
+[ext_resource type="Texture2D" uid="uid://fqxyu6jc4dix" path="res://modules/levels/textures/cement/cement_arcing_pattern1/cement_arcing_pattern1_Roughness.png" id="21_oe4hx"]
 [ext_resource type="Script" path="res://modules/levels/tutorial_island/Machine.gd" id="22_bu6j1"]
 [ext_resource type="Material" uid="uid://df2tbgbdnewve" path="res://modules/levels/textures/iron/rustediron-streaks.tres" id="22_ctk6t"]
 [ext_resource type="Material" uid="uid://dg8hms6nc8isg" path="res://modules/levels/textures/concrete/degraded-concrete.tres" id="23_nvpep"]
@@ -37,23 +37,6 @@
 [ext_resource type="Texture2D" uid="uid://dpeq4jvuqa75j" path="res://modules/levels/textures/panel/rusty-panel/rusty-panel_normal.png" id="49_34cn5"]
 [ext_resource type="Texture2D" uid="uid://bj3t26m13mwi4" path="res://modules/levels/textures/panel/rusty-panel/rusty-panel_roughness.png" id="50_ocwfx"]
 [ext_resource type="Texture2D" uid="uid://bppt04288m0p2" path="res://modules/levels/textures/panel/rusty-panel.png" id="50_t8ld6"]
-
-[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_jbf4t"]
-panorama = ExtResource("1_bjvad")
-filter = false
-
-[sub_resource type="Sky" id="Sky_q2ral"]
-sky_material = SubResource("PanoramaSkyMaterial_jbf4t")
-
-[sub_resource type="Environment" id="Environment_sw836"]
-background_mode = 2
-sky = SubResource("Sky_q2ral")
-tonemap_mode = 3
-ssr_enabled = true
-ssil_enabled = true
-volumetric_fog_enabled = true
-volumetric_fog_emission_energy = 0.0
-volumetric_fog_gi_inject = 2.0
 
 [sub_resource type="VoxelGIData" id="VoxelGIData_6vufj"]
 _data = {
@@ -650,8 +633,7 @@ density = 0.09
 
 [node name="Node3D" type="Node3D"]
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_sw836")
+[node name="WorldEnvironment" parent="." instance=ExtResource("1_5y613")]
 
 [node name="VoxelGI" type="VoxelGI" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 77.5923, 13.8284)

@@ -2,42 +2,19 @@
 
 [ext_resource type="Script" path="res://main/Main.gd" id="1_8dsjx"]
 [ext_resource type="Script" path="res://main/HUD.gd" id="2_fos80"]
-[ext_resource type="Script" path="res://modules/ui/Menu.gd" id="3_5uk5d"]
+[ext_resource type="PackedScene" uid="uid://cq12055y5na3p" path="res://main/MainMenu.tscn" id="3_bjd3v"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_8dsjx")
 
 [node name="HUD" type="Control" parent="."]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("2_fos80")
 
-[node name="Menu" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-script = ExtResource("3_5uk5d")
-
-[node name="Button" type="Button" parent="Menu"]
-layout_mode = 0
-offset_left = -1.0
-offset_top = 13.0
-offset_right = 153.0
-offset_bottom = 44.0
-text = "load tutorial island"
-
-[node name="Button2" type="Button" parent="Menu"]
-layout_mode = 0
-offset_left = 1.0
-offset_top = 64.0
-offset_right = 150.0
-offset_bottom = 95.0
-text = "load test chamber"
+[node name="MainMenu" parent="." instance=ExtResource("3_bjd3v")]
 
 [node name="Main3D" type="Node3D" parent="."]
-
-[connection signal="pressed" from="Menu/Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Menu/Button2" to="." method="_on_button_2_pressed"]

@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Texture2D" uid="uid://cg6qivrp4d7ql" path="res://modules/environments/skybox01.png" id="1_wi435"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_jbf4t"]
+panorama = ExtResource("1_wi435")
+filter = false
+
+[sub_resource type="Sky" id="Sky_q2ral"]
+sky_material = SubResource("PanoramaSkyMaterial_jbf4t")
+
+[sub_resource type="Environment" id="Environment_sw836"]
+background_mode = 2
+sky = SubResource("Sky_q2ral")
+tonemap_mode = 3
+ssr_enabled = true
+ssil_enabled = true
+volumetric_fog_enabled = true
+volumetric_fog_emission_energy = 0.0
+volumetric_fog_gi_inject = 2.0
+
+[node name="WorldEnvironment" type="WorldEnvironment"]
+environment = SubResource("Environment_sw836")
