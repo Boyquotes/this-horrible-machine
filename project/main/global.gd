@@ -1,12 +1,17 @@
 extends Node
 
+const VERSION = "0.1.0"
+
+# TODO 0.1.0 is first godot 4 release with basic skeleton to build from
+
 var play_sfx = true
 var play_music = true
 var fullscreen = false
 const SCENE_MAIN_MENU = "res://main/MainMenu.tscn"
-
 const SETTINGS_FILE = "user://settings.cfg"
 const CONFIG_SETTINGS_SECTION = "settings"
+
+
 
 func _ready():
 	print_debug("Global ready")

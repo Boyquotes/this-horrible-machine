@@ -7,7 +7,7 @@ func _on_start_pressed():
 	get_tree().change_scene_to_packed(gameplay_scene)
 
 func _on_settings_pressed():
-	get_tree().change_scene_to_packed(settings_scene)
+	get_tree().change_scene_to_packed(settings_scene) # FIXME can't change to a null scene
 
 func _on_quit_pressed():
 	get_tree().quit()
