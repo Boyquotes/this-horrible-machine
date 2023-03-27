@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://cgsbk5pyyx1rd"]
+[gd_scene load_steps=6 format=3 uid="uid://cgsbk5pyyx1rd"]
 
 [ext_resource type="Script" path="res://modules/ui/Menu.gd" id="1_silv6"]
+[ext_resource type="Script" path="res://main/Version.gd" id="2_b3t17"]
 [ext_resource type="Script" path="res://main/MenuOptions.gd" id="2_x7xrj"]
 [ext_resource type="PackedScene" uid="uid://bcmjxxeruupi1" path="res://main/gameplay/Gameplay.tscn" id="3_kbttk"]
 [ext_resource type="PackedScene" uid="uid://hq1rhyep1dbq" path="res://main/settings/Settings.tscn" id="4_ogjd3"]
@@ -43,6 +44,7 @@ offset_left = 845.0
 offset_top = 128.0
 offset_right = 885.0
 offset_bottom = 151.0
+script = ExtResource("2_b3t17")
 
 [node name="MenuOptions" type="VFlowContainer" parent="."]
 layout_mode = 0
