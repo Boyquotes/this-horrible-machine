@@ -1,31 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://dgllyvya5a568"]
+[gd_scene load_steps=2 format=3 uid="uid://dgllyvya5a568"]
 
 [ext_resource type="Script" path="res://modules/levels/underworld/underworld.gd" id="1_rhlts"]
-[ext_resource type="PackedScene" uid="uid://y3gncmqbmfqp" path="res://modules/levels/underworld/blender/dyson_growth.blend" id="2_f3jwm"]
-[ext_resource type="PackedScene" uid="uid://ca4qrpacasltg" path="res://modules/levels/underworld/blender/hollow_rock.blend" id="3_7dgyd"]
-[ext_resource type="PackedScene" uid="uid://cuksurh7mrt01" path="res://modules/levels/underworld/blender/hex_palace.blend" id="4_fqmof"]
-[ext_resource type="PackedScene" uid="uid://by2n4414nb1jn" path="res://modules/levels/underworld/blender/mining_platform.blend" id="5_wy3l8"]
-[ext_resource type="PackedScene" uid="uid://cc4m77krb25qb" path="res://modules/levels/underworld/blender/decay_gardens.blend" id="6_m8dc4"]
-[ext_resource type="PackedScene" uid="uid://bov3yo1odp4il" path="res://modules/levels/underworld/blender/tower_bridge.blend" id="7_juxx5"]
 
 [node name="underworld" type="Node3D"]
 script = ExtResource("1_rhlts")
-
-[node name="dyson_growth" parent="." instance=ExtResource("2_f3jwm")]
-
-[node name="hollow_rock" parent="." instance=ExtResource("3_7dgyd")]
-transform = Transform3D(0.609608, 0.553782, 0.567189, 0.563105, -0.806128, 0.181855, 0.557935, 0.208526, -0.803259, 287.647, 104.735, -89.2173)
-
-[node name="hex_palace" parent="." instance=ExtResource("4_fqmof")]
-transform = Transform3D(-0.998755, 7.85049e-05, -0.0498748, 0.0030005, 0.998282, -0.0585165, 0.0497844, -0.0585934, -0.99704, 109.06, 584.502, -195.8)
-
-[node name="mining_platform" parent="." instance=ExtResource("5_wy3l8")]
-transform = Transform3D(0.434907, -0.236833, 0.868773, 0.267067, 0.955309, 0.126729, -0.85996, 0.176905, 0.478721, 298.924, -175.669, -30.9818)
-
-[node name="decay_gardens" parent="." instance=ExtResource("6_m8dc4")]
-transform = Transform3D(0.992883, 0, -0.119097, 0, 1, 0, 0.119097, 0, 0.992883, 405.858, 122.972, 59.0304)
-
-[node name="tower_bridge" parent="." instance=ExtResource("7_juxx5")]
-transform = Transform3D(0.54641, -0.0281818, 0.837044, 0.397892, -0.870706, -0.289053, 0.736965, 0.490995, -0.464549, 173.541, 291.902, -71.2282)
-
-[editable path="dyson_growth"]

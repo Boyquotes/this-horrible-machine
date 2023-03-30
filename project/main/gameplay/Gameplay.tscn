@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://bcmjxxeruupi1"]
+[gd_scene load_steps=3 format=3 uid="uid://bcmjxxeruupi1"]
 
 [ext_resource type="Script" path="res://main/gameplay/Gameplay.gd" id="1_w2jkc"]
+[ext_resource type="PackedScene" uid="uid://dgllyvya5a568" path="res://modules/levels/underworld/underworld.tscn" id="2_fgj04"]
 
 [node name="Gameplay" type="Node3D"]
 script = ExtResource("1_w2jkc")
+
+[node name="underworld" parent="." instance=ExtResource("2_fgj04")]

@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://th2renc0utbe"]
+
+[ext_resource type="Texture2D" uid="uid://ckek65xjjcw6d" path="res://modules/surfaces/textures/_prototype/slowblink_128.png" id="1_yxnn5"]
+
+[resource]
+albedo_texture = ExtResource("1_yxnn5")
+texture_filter = 0

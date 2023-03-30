@@ -1,5 +1,8 @@
 class_name QodotTextureLoader
 
+# FIXME default texture location
+# TODO make default material style nearest
+
 const TEXTURE_EMPTY := '__TB_empty'	# TrenchBroom empty texture string
 
 enum PBRSuffix {
