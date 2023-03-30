@@ -27,3 +27,5 @@ transform = Transform3D(0.992883, 0, -0.119097, 0, 1, 0, 0.119097, 0, 0.992883, 
 
 [node name="tower_bridge" parent="." instance=ExtResource("7_juxx5")]
 transform = Transform3D(0.54641, -0.0281818, 0.837044, 0.397892, -0.870706, -0.289053, 0.736965, 0.490995, -0.464549, 173.541, 291.902, -71.2282)
+
+[editable path="dyson_growth"]

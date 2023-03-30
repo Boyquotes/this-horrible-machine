@@ -28,7 +28,7 @@ extends Node
 #		player_instance = player_resource.instantiate()
 #		main_3d.add_child(player_instance)
 
-func _unhandled_input(event): #esc to quit function
+func _unhandled_input(event): # HACK esc to quit function until proper menu is running
 	if Input.is_action_just_pressed("quit_game"):
 		get_tree().get_root().propagate_notification(NOTIFICATION_WM_CLOSE_REQUEST)
 		get_tree().quit()
