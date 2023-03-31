@@ -9,3 +9,5 @@ script = ExtResource("1_w2jkc")
 level_instance = ExtResource("2_j2muh")
 
 [node name="underworld" parent="." instance=ExtResource("2_fgj04")]
+
+[node name="mecha_crypt" parent="." instance=ExtResource("2_j2muh")]

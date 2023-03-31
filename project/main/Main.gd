@@ -1,7 +1,7 @@
 extends Node
 
 @onready var main_menu = $MainMenu
-@onready var gameplay = $Gameplay
+
 
 
 ###########################################################old code
