@@ -1,0 +1,26 @@
+// Game: this horrible machine
+// Format: Valve
+// entity 0
+{
+"mapversion" "220"
+"classname" "worldspawn"
+"_tb_textures" "textures/_prototype"
+}
+// entity 1
+{
+"classname" "func_group"
+"_tb_type" "_tb_group"
+"_tb_name" "slider"
+"_tb_id" "49"
+// brush 0
+{
+( -96 -16 80 ) ( -96 -15 80 ) ( -96 -16 81 ) _prototype/_proto_16 [ 0 -1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -48 -32 80 ) ( -48 -32 81 ) ( -47 -32 80 ) _prototype/_proto_16 [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -48 -16 48 ) ( 80 -32 32 ) ( -48 -32 32 ) _prototype/_proto_16 [ 1 0 0 0 ] [ 0 -0.7071067811865476 -0.7071067811865476 14.391925 ] 0 1 1
+( -48 -16 0 ) ( -47 -16 0 ) ( -48 -15 0 ) _prototype/_proto_16 [ -1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -16 48 48 ) ( -16 49 48 ) ( -15 48 48 ) _prototype/_proto_16 [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -48 48 16 ) ( -48 32 0 ) ( 80 32 0 ) _prototype/_proto_16 [ -1 0 0 0 ] [ 0 -0.7071067811865476 -0.7071067811865476 14.391912 ] 0 1 1
+( -16 48 96 ) ( -15 48 96 ) ( -16 48 97 ) _prototype/_proto_16 [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 96 48 96 ) ( 96 48 97 ) ( 96 49 96 ) _prototype/_proto_16 [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+}

@@ -1,0 +1,78 @@
+// Game: this horrible machine
+// Format: Valve
+// entity 0
+{
+"mapversion" "220"
+"classname" "worldspawn"
+"_tb_textures" "textures/_prototype"
+}
+// entity 1
+{
+"classname" "func_group"
+"_tb_type" "_tb_group"
+"_tb_name" "left rods"
+"_tb_id" "50"
+}
+// entity 2
+{
+"classname" "func_group"
+"_tb_type" "_tb_group"
+"_tb_name" "rod"
+"_tb_id" "16"
+"_tb_linked_group_id" "{b75b2613-2121-4a7a-864c-29830b928fd5}"
+"_tb_transformation" "1 0 0 -1032 0 1 0 128 0 0 1 -240 0 0 0 1"
+"_tb_group" "50"
+// brush 0
+{
+( -8 896 504 ) ( -8 897 504 ) ( -8 896 505 ) _prototype/_proto_16 [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -8 128 -4 ) ( -4 128 -8 ) ( -4 256 -8 ) _prototype/_proto_16 [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -1464 -128 248 ) ( -1464 -128 249 ) ( -1463 -128 248 ) _prototype/_proto_16 [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -1464 640 -8 ) ( -1463 640 -8 ) ( -1464 641 -8 ) _prototype/_proto_16 [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -1208 896 8 ) ( -1208 897 8 ) ( -1207 896 8 ) _prototype/_proto_16 [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -1208 128 504 ) ( -1207 128 504 ) ( -1208 128 505 ) _prototype/_proto_16 [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 4 128 8 ) ( 8 256 4 ) ( 8 128 4 ) _prototype/_proto_16 [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 8 896 504 ) ( 8 896 505 ) ( 8 897 504 ) _prototype/_proto_16 [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+}
+// entity 3
+{
+"classname" "func_group"
+"_tb_type" "_tb_group"
+"_tb_name" "rod"
+"_tb_id" "15"
+"_tb_linked_group_id" "{b75b2613-2121-4a7a-864c-29830b928fd5}"
+"_tb_transformation" "1 0 0 -1032 0 1 0 128 0 0 1 -176 0 0 0 1"
+"_tb_group" "50"
+// brush 0
+{
+( -8 896 568 ) ( -8 897 568 ) ( -8 896 569 ) _prototype/_proto_16 [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -8 128 60 ) ( -4 128 56 ) ( -4 256 56 ) _prototype/_proto_16 [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -1464 -128 312 ) ( -1464 -128 313 ) ( -1463 -128 312 ) _prototype/_proto_16 [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -1464 640 56 ) ( -1463 640 56 ) ( -1464 641 56 ) _prototype/_proto_16 [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -1208 896 72 ) ( -1208 897 72 ) ( -1207 896 72 ) _prototype/_proto_16 [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -1208 128 568 ) ( -1207 128 568 ) ( -1208 128 569 ) _prototype/_proto_16 [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 4 128 72 ) ( 8 256 68 ) ( 8 128 68 ) _prototype/_proto_16 [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 8 896 568 ) ( 8 896 569 ) ( 8 897 568 ) _prototype/_proto_16 [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+}
+// entity 4
+{
+"classname" "func_group"
+"_tb_type" "_tb_group"
+"_tb_name" "rod"
+"_tb_id" "18"
+"_tb_linked_group_id" "{b75b2613-2121-4a7a-864c-29830b928fd5}"
+"_tb_transformation" "1 0 0 -1032 0 1 0 128 0 0 1 -304 0 0 0 1"
+"_tb_group" "50"
+// brush 0
+{
+( -8 896 440 ) ( -8 897 440 ) ( -8 896 441 ) _prototype/_proto_16 [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -8 128 -68 ) ( -4 128 -72 ) ( -4 256 -72 ) _prototype/_proto_16 [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -1464 -128 184 ) ( -1464 -128 185 ) ( -1463 -128 184 ) _prototype/_proto_16 [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -1464 640 -72 ) ( -1463 640 -72 ) ( -1464 641 -72 ) _prototype/_proto_16 [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -1208 896 -56 ) ( -1208 897 -56 ) ( -1207 896 -56 ) _prototype/_proto_16 [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -1208 128 440 ) ( -1207 128 440 ) ( -1208 128 441 ) _prototype/_proto_16 [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 4 128 -56 ) ( 8 256 -60 ) ( 8 128 -60 ) _prototype/_proto_16 [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 8 896 440 ) ( 8 896 441 ) ( 8 897 440 ) _prototype/_proto_16 [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+}
